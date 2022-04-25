@@ -23,7 +23,9 @@ Route::post('/login', [AuthController::class, 'login']);
 
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
-    Route::post('/choosemployee', [AuthController::class, 'registerEmployee']);
+    Route::post('/choosemployee', [EmployeeController::class, 'authUsers']);
+    Route::get('/chosenemployee', [EmployeeController::class, 'showAuthUsers']);
+    Route::post('/start-timer-user', [EmployeeController::class, 'startTimerOfAnotherUser']);
     Route::post('/start-timer', [EmployeeController::class, 'updateCurrent']);
     Route::post('/absence-reason', [EmployeeController::class, 'absenceReason']);
     Route::get('/show-work-time', [EmployeeController::class, 'showWorkTime']);

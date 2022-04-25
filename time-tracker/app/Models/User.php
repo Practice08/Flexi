@@ -51,4 +51,7 @@ class User extends Authenticatable
     {
         return $this->hasMany(Timer::class);
     }
+    public function chosenEmployee(){
+        return $this->hasMany(ChosenEmployee::class);
+    }
 }

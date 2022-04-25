@@ -5,9 +5,71 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Timer;
 use App\Models\AbsenceReason;
+use App\Models\User;
+use App\Models\ChosenEmployee;
 
 class EmployeeController extends Controller
 {
+    public function userInfo(){
+        $worked_hours = Timer::select('user_id', 'worked_hours')->where('user_id', '=', auth()->id())->sum('worked_hours');
+        $user_info = User::all();
+        $response = [
+            'user_info' => $user_info,
+            'worked_hours' => $worked_hours,
+        ];
+        return response($response, 201);
+    }
+    public function showAuthUsers(){
+        $all_users = User::find(auth()->id())->chosenEmployee;
+        return response($all_users, 201);
+    }
+    public function authUsers(Request $request){
+
+        $fields = $request->validate([
+            'chosen_id' => 'required'
+        ]);
+
+        $authUsers = User::find(auth()->id())->chosenEmployee->count();
+        if ($authUsers > 1){
+            return response()->json([
+                'status' => 'You are not allowed to register more than two users',
+            ]);
+        }
+        $data = ChosenEmployee::create([
+            'user_id' => auth()->id(),
+            'chosen_id' => $fields['chosen_id'],
+        ]);
+        return response($data, 201);
+    }
+    public function startTimerOfAnotherUser(Request $request){
+        $fields = $request->validate([
+            'user_id' => 'required',
+        ]);
+        if (date('H') > 22 || date('H') < 7){
+            return response()->json([
+                'status' => "You are not allowed to work now"
+            ]);
+        }
+        $timeEntry = Timer::whereNull('stopped_at')->where('user_id', $fields['user_id'])->first();
+        
+        if ( $timeEntry ){
+            $timeEntry->update([
+                'worked_hours' => $timeEntry->getWorkedHours(now()),
+                'stopped_at' => now(),
+            ]);
+            return response()->json([
+                'status' => 'Work time has stopped at [' . date("H:i:s") . '] hours'
+            ]);
+        }else {
+            User::find($fields['user_id'])->timeEntries()->create([
+                'started_at' => now()
+            ]);
+                
+            return response()->json([
+                'status' => 'Work time has started'
+            ]);
+        }
+    }
     public function absenceReason(Request $request){
         $fields = $request->validate([
             'reason' => 'required|string',
