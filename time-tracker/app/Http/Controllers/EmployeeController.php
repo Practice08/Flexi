@@ -7,6 +7,8 @@ use App\Models\Timer;
 use App\Models\AbsenceReason;
 use App\Models\User;
 use App\Models\ChosenEmployee;
+use Carbon\Carbon;
+
 
 class EmployeeController extends Controller
 {
@@ -127,4 +129,13 @@ class EmployeeController extends Controller
             'status' => 'In total you have worked ' . $worked_hours , 
         ]);
     }
+    public function workedHoursByDay(Request $request){
+        $worked_hours = Timer::select('user_id', 'worked_hours', 'started_at')->where('user_id', auth()->id())->get()->groupBy(function($date){
+            return Carbon::parse($date->started_at)->format('d');
+        });
+        return response()->json([
+            'status' => $worked_hours
+        ]);
+    }
 }
+
