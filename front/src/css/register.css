@@ -78,7 +78,7 @@
   margin-top:27px;
   margin-bottom:-598px;
   min-height:646px;
-  background-image:url(assets/images/Rectangle_44.png);
+  background-image:url(img/Reg_images/RL_background.png);
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -196,27 +196,6 @@
 .Frame-3-outer{
   pointer-events:none;
   z-index:12;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.q130-1303682-securit{
-  position:relative;
-  z-index:11;
-  pointer-events:none;
-  margin-left:94.84978540772532%;
-  width:4.721030042918455%;
-  height:6.367292225201072%;
-  margin-top:46.137339055793994%;
-  content:url(assets/images/_130_1303682_security_password_2_icon_password_icon_in_png_1.png);
-  visibility:hidden;
-}
-.q130-1303682-securit-outer{
-  pointer-events:none;
-  z-index:11;
   position:absolute;
   display:flex;
   width:100%;
@@ -389,6 +368,12 @@
   overflow:hidden;
 }
 .mail-outer{
+  pointer-events:none;
+  z-index:29;
+  position:relative;
+  display:flex;
+}
+.mail-outer-1{
   pointer-events:none;
   z-index:29;
   position:relative;
@@ -587,7 +572,7 @@
 .Register{
   position:relative;
   z-index:35;
-  pointer-events:none;
+  pointer-events: auto;
   margin-left:46.875%;
   width:7.083333333333333%;
   height:3.515625%;
@@ -616,9 +601,9 @@
 .Password{
   position:relative;
   z-index:28;
-  pointer-events:none;
+  pointer-events:fill;
   margin-left:37.708333333333336%;
-  width:6.041666666666667%;
+  width:19.041666666666667%;
   height:2.63671875%;
   margin-top:39.44444444444444%;
   text-align:left;
@@ -645,9 +630,9 @@
 .Email{
   position:relative;
   z-index:27;
-  pointer-events:none;
+  pointer-events:fill;
   margin-left:37.708333333333336%;
-  width:3.4027777777777777%;
+  width:27.4027777777777777%;
   height:2.63671875%;
   margin-top:34.02777777777778%;
   text-align:left;
@@ -674,9 +659,9 @@
 .Name-and-Surname{
   position:relative;
   z-index:26;
-  pointer-events:none;
+  pointer-events: fill;
   margin-left:37.708333333333336%;
-  width:12.708333333333334%;
+  width:25%;
   height:2.63671875%;
   margin-top:28.61111111111111%;
   text-align:left;
@@ -713,27 +698,6 @@
 .key-solid-1-outer{
   pointer-events:none;
   z-index:25;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.user-regular-1{
-  position:relative;
-  z-index:24;
-  pointer-events:none;
-  opacity:0.25;
-  margin-left:15.972222222222221%;
-  width:1.7361111111111112%;
-  height:2.44140625%;
-  margin-top:31.25%;
-  overflow:hidden;
-}
-.user-regular-1-outer{
-  pointer-events:none;
-  z-index:24;
   position:absolute;
   display:flex;
   width:100%;
@@ -789,46 +753,6 @@
   position:relative;
   display:flex;
 }
-.Vector{
-  position:relative;
-  z-index:44;
-  pointer-events:none;
-  margin-left:47.999999999999986%;
-  width:4.039999999999999%;
-  height:4%;
-  margin-top:67.99999999999999%;
-  content:url(assets/images/Vector.png);
-}
-.Vector-outer{
-  pointer-events:none;
-  z-index:44;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-1{
-  position:relative;
-  z-index:43;
-  pointer-events:none;
-  margin-left:36.000000000000064%;
-  width:28.300000000000054%;
-  height:29.02%;
-  margin-top:28.000000000000053%;
-  content:url(assets/images/Vector_1.png);
-}
-.Vector-1-outer{
-  pointer-events:none;
-  z-index:43;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
 .Vector-2{
   position:relative;
   z-index:42;
@@ -837,7 +761,7 @@
   width:87.34000000000012%;
   height:87.34%;
   margin-top:6.000000000000009%;
-  content:url(assets/images/Vector_2.png);
+  content:url(img/Reg_images/questions.svg);
 }
 .Vector-2-outer{
   pointer-events:none;
@@ -851,17 +775,18 @@
 }
 .User-icon{
   position:relative;
-  z-index:40;
+  z-index:30;
   pointer-events:none;
-  margin-left:34.93055555555556%;
-  width:1.6666666666666667%;
-  height:2.34375%;
-  margin-top:28.61111111111111%;
-  content:url(img/Reg_images/user-icon.png);
+  width:91.66666666666667%;
+  height:75%;
+  margin-top:28.7%;
+  margin-left:23%;
+  font-size: 20px;
+  content:url(img/Reg_images/user_icon.svg);
 }
 .User-icon-outer{
   pointer-events:none;
-  z-index:40;
+  z-index:30;
   position:absolute;
   display:flex;
   width:100%;
