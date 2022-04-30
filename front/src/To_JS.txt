@@ -1,0 +1,9 @@
+Name-Input
+Password-Input
+Email-Input
+Register_button
+Name_Login_Input
+Pass_forgot
+Login_Password_Input
+Friends_Acc
+Login_Button

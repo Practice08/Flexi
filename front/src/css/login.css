@@ -131,77 +131,17 @@
 }
 .Vector-4{
   position:relative;
-  z-index:19;
+  z-index:30;
   pointer-events:none;
-  margin-left:62.49999999999998%;
-  width:20.874999999999993%;
-  height:40.625%;
+  margin-left:10.49999999999998%;
+  width:90%;
+  height:120%;
   margin-top:8.33333333333333%;
-  content:url(assets/images/Vector_3.png);
+  content:url(img/svg/double_face.svg);
 }
 .Vector-4-outer{
   pointer-events:none;
   z-index:19;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-5{
-  position:relative;
-  z-index:18;
-  pointer-events:none;
-  margin-left:79.16666666666667%;
-  width:20.833333333333332%;
-  height:32.791666666666664%;
-  margin-top:58.333333333333336%;
-  content:url(assets/images/Vector_4.png);
-}
-.Vector-5-outer{
-  pointer-events:none;
-  z-index:18;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-6{
-  position:relative;
-  z-index:17;
-  pointer-events:none;
-  margin-left:16.666666666666668%;
-  width:41.666666666666664%;
-  height:41.666666666666664%;
-  margin-top:8.333333333333334%;
-  content:url(assets/images/Vector_5.png);
-}
-.Vector-6-outer{
-  pointer-events:none;
-  z-index:17;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-7{
-  position:relative;
-  z-index:16;
-  pointer-events:none;
-  margin-left:0%;
-  width:75%;
-  height:33.333333333333336%;
-  margin-top:58.333333333333336%;
-  content:url(assets/images/Vector_6.png);
-}
-.Vector-7-outer{
-  pointer-events:none;
-  z-index:16;
   position:absolute;
   display:flex;
   width:100%;
@@ -273,26 +213,6 @@
 .Frame-3-outer{
   pointer-events:none;
   z-index:12;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.q130-1303682-securit{
-  position:relative;
-  z-index:11;
-  pointer-events:none;
-  margin-left:94.84978540772532%;
-  width:4.721030042918455%;
-  height:6.367292225201072%;
-  margin-top:46.137339055793994%;
-  content:url(assets/images/_130_1303682_security_password_2_icon_password_icon_in_png_1.png);
-}
-.q130-1303682-securit-outer{
-  pointer-events:none;
-  z-index:11;
   position:absolute;
   display:flex;
   width:100%;
@@ -469,46 +389,6 @@
   position:relative;
   display:flex;
 }
-.Vector{
-  position:relative;
-  z-index:34;
-  pointer-events:none;
-  margin-left:47.999999999999986%;
-  width:4.039999999999999%;
-  height:4%;
-  margin-top:67.99999999999999%;
-  content:url(assets/images/Vector.png);
-}
-.Vector-outer{
-  pointer-events:none;
-  z-index:34;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-1{
-  position:relative;
-  z-index:33;
-  pointer-events:none;
-  margin-left:36.000000000000064%;
-  width:28.300000000000054%;
-  height:29.02%;
-  margin-top:28.000000000000053%;
-  content:url(assets/images/Vector_1.png);
-}
-.Vector-1-outer{
-  pointer-events:none;
-  z-index:33;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
 .Vector-2{
   position:relative;
   z-index:32;
@@ -517,7 +397,7 @@
   width:87.34000000000012%;
   height:87.34%;
   margin-top:6.000000000000009%;
-  content:url(assets/images/Vector_2.png);
+  content:url(img/Reg_images/questions.svg);
 }
 .Vector-2-outer{
   pointer-events:none;
@@ -566,7 +446,7 @@
   width:1.7361111111111112%;
   height:2.44140625%;
   margin-top:34.791666666666664%;
-  content:url(assets/images/Vector.png);
+  content:url(img/Reg_images/key.png);
 }
 .Vector-3-outer{
   pointer-events:none;
@@ -581,9 +461,9 @@
 .Password{
   position:relative;
   z-index:29;
-  pointer-events:none;
+  pointer-events:fill;
   margin-left:37.708333333333336%;
-  width:6.041666666666667%;
+  width:27.041666666666667%;
   height:2.63671875%;
   margin-top:34.791666666666664%;
   text-align:left;
@@ -610,9 +490,9 @@
 .Username{
   position:relative;
   z-index:28;
-  pointer-events:none;
+  pointer-events:fill;
   margin-left:37.708333333333336%;
-  width:6.458333333333333%;
+  width:27.458333333333333%;
   height:2.63671875%;
   margin-top:28.61111111111111%;
   text-align:left;
@@ -680,7 +560,7 @@
 .Login{
   position:relative;
   z-index:25;
-  pointer-events:none;
+  pointer-events:fill;
   margin-left:46.666666666666664%;
   width:4.652777777777778%;
   height:3.515625%;
@@ -730,7 +610,7 @@
 .I-forgot-my-password{
   position:relative;
   z-index:22;
-  pointer-events:none;
+  pointer-events: fill;
   margin-left:21.888412017167383%;
   width:62.8755364806867%;
   height:28.333333333333332%;
@@ -793,7 +673,7 @@
   width:2.0833333333333335%;
   height:2.9296875%;
   margin-top:28.26388888888889%;
-  content:url(assets/images/User_icon.png);
+  content:url(img/Reg_images/user-icon.png);
 }
 .User-icon-outer{
   pointer-events:none;
