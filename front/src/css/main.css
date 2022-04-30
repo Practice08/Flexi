@@ -67,69 +67,6 @@
   position:relative;
   display:flex;
 }
-.Vector-8{
-  position:relative;
-  z-index:144;
-  pointer-events:none;
-  margin-left:56%;
-  width:4%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector_8.png);
-  visibility:hidden;
-}
-.Vector-8-outer{
-  pointer-events:none;
-  z-index:144;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-9{
-  position:relative;
-  z-index:143;
-  pointer-events:none;
-  margin-left:40%;
-  width:4%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector_9.png);
-  visibility:hidden;
-}
-.Vector-9-outer{
-  pointer-events:none;
-  z-index:143;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-10{
-  position:relative;
-  z-index:142;
-  pointer-events:none;
-  margin-left:5.999999999999995%;
-  width:87.33999999999993%;
-  height:87.34%;
-  margin-top:5.999999999999995%;
-  content:url(assets/images/Vector_10.png);
-  visibility:hidden;
-}
-.Vector-10-outer{
-  pointer-events:none;
-  z-index:142;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
 .pause-circle-3{
   position:relative;
   z-index:137;
@@ -148,69 +85,6 @@
   z-index:137;
   position:relative;
   display:flex;
-}
-.Vector-11{
-  position:relative;
-  z-index:140;
-  pointer-events:none;
-  margin-left:56%;
-  width:4%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector_11.png);
-  visibility:hidden;
-}
-.Vector-11-outer{
-  pointer-events:none;
-  z-index:140;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-12{
-  position:relative;
-  z-index:139;
-  pointer-events:none;
-  margin-left:40%;
-  width:4%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector_12.png);
-  visibility:hidden;
-}
-.Vector-12-outer{
-  pointer-events:none;
-  z-index:139;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-13{
-  position:relative;
-  z-index:138;
-  pointer-events:none;
-  margin-left:5.999999999999995%;
-  width:87.33999999999993%;
-  height:87.34%;
-  margin-top:5.999999999999995%;
-  content:url(assets/images/Vector_13.png);
-  visibility:hidden;
-}
-.Vector-13-outer{
-  pointer-events:none;
-  z-index:138;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
 }
 .stop-circle-1{
   position:relative;
@@ -231,48 +105,6 @@
   position:relative;
   display:flex;
 }
-.Vector-14{
-  position:relative;
-  z-index:136;
-  pointer-events:none;
-  margin-left:36%;
-  width:29%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector_14.png);
-  visibility:hidden;
-}
-.Vector-14-outer{
-  pointer-events:none;
-  z-index:136;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-15{
-  position:relative;
-  z-index:135;
-  pointer-events:none;
-  margin-left:5.999999999999995%;
-  width:87.33999999999993%;
-  height:87.34%;
-  margin-top:5.999999999999995%;
-  content:url(assets/images/Vector_15.png);
-  visibility:hidden;
-}
-.Vector-15-outer{
-  pointer-events:none;
-  z-index:135;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
 .pause-circle{
   position:relative;
   z-index:153;
@@ -292,48 +124,6 @@
   position:relative;
   display:flex;
 }
-.Vector{
-  position:relative;
-  z-index:156;
-  pointer-events:none;
-  margin-left:56%;
-  width:4%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector.png);
-  visibility:hidden;
-}
-.Vector-outer{
-  pointer-events:none;
-  z-index:156;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-1{
-  position:relative;
-  z-index:155;
-  pointer-events:none;
-  margin-left:40%;
-  width:4%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector_1.png);
-  visibility:hidden;
-}
-.Vector-1-outer{
-  pointer-events:none;
-  z-index:155;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
 .Vector-2{
   position:relative;
   z-index:154;
@@ -342,7 +132,7 @@
   width:87.33999999999993%;
   height:87.34%;
   margin-top:5.999999999999995%;
-  content:url(assets/images/Vector_2.png);
+  content:url(img/svg/Play.svg);
 }
 .Vector-2-outer{
   pointer-events:none;
@@ -373,46 +163,6 @@
   position:relative;
   display:flex;
 }
-.Vector-3{
-  position:relative;
-  z-index:152;
-  pointer-events:none;
-  margin-left:56%;
-  width:4%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector_3.png);
-}
-.Vector-3-outer{
-  pointer-events:none;
-  z-index:152;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-4{
-  position:relative;
-  z-index:151;
-  pointer-events:none;
-  margin-left:40%;
-  width:4%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector_4.png);
-}
-.Vector-4-outer{
-  pointer-events:none;
-  z-index:151;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
 .Vector-5{
   position:relative;
   z-index:150;
@@ -421,7 +171,7 @@
   width:87.33999999999993%;
   height:87.34%;
   margin-top:5.999999999999995%;
-  content:url(assets/images/Vector_5.png);
+  content:url(img/svg/Pause.svg);
 }
 .Vector-5-outer{
   pointer-events:none;
@@ -452,26 +202,6 @@
   position:relative;
   display:flex;
 }
-.Vector-6{
-  position:relative;
-  z-index:148;
-  pointer-events:none;
-  margin-left:36%;
-  width:29%;
-  height:29%;
-  margin-top:36%;
-  content:url(assets/images/Vector_6.png);
-}
-.Vector-6-outer{
-  pointer-events:none;
-  z-index:148;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
 .Vector-7{
   position:relative;
   z-index:147;
@@ -480,7 +210,7 @@
   width:87.33999999999993%;
   height:87.34%;
   margin-top:5.999999999999995%;
-  content:url(assets/images/Vector_7.png);
+  content:url(img/svg/Stop.svg);
 }
 .Vector-7-outer{
   pointer-events:none;
@@ -3136,46 +2866,6 @@
   position:relative;
   display:flex;
 }
-.Vector-16{
-  position:relative;
-  z-index:106;
-  pointer-events:none;
-  margin-left:47.999999999999986%;
-  width:4.039999999999999%;
-  height:4%;
-  margin-top:67.99999999999999%;
-  content:url(assets/images/Vector_16.png);
-}
-.Vector-16-outer{
-  pointer-events:none;
-  z-index:106;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Vector-17{
-  position:relative;
-  z-index:105;
-  pointer-events:none;
-  margin-left:36.000000000000064%;
-  width:28.300000000000054%;
-  height:29.02%;
-  margin-top:28.000000000000053%;
-  content:url(assets/images/Vector_17.png);
-}
-.Vector-17-outer{
-  pointer-events:none;
-  z-index:105;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
 .Vector-18{
   position:relative;
   z-index:104;
@@ -3184,7 +2874,7 @@
   width:87.34000000000012%;
   height:87.34%;
   margin-top:6.000000000000009%;
-  content:url(assets/images/Vector_18.png);
+  content:url(img/Reg_images/questions.svg);
 }
 .Vector-18-outer{
   pointer-events:none;
@@ -3208,26 +2898,6 @@
 .Rectangle-169-outer{
   pointer-events:none;
   z-index:157;
-  position:absolute;
-  display:flex;
-  width:100%;
-  height:100%;
-  left:0;
-  top:0;
-}
-.Polygon-1{
-  position:relative;
-  z-index:145;
-  pointer-events:none;
-  margin-left:54.375%;
-  width:1.3888888888888888%;
-  height:1.953125%;
-  margin-top:14.444444444444445%;
-  content:url(assets/images/Polygon_1.png);
-}
-.Polygon-1-outer{
-  pointer-events:none;
-  z-index:145;
   position:absolute;
   display:flex;
   width:100%;
@@ -3745,7 +3415,6 @@
   margin-top:0px;
   margin-bottom:0px;
   min-height:52px;
-  content:url(assets/images/Ellipse_1.png);
 }
 .Ellipse-1-outer{
   pointer-events:none;
@@ -3764,7 +3433,7 @@
   margin-top:-50px;
   margin-bottom:35px;
   min-height:15px;
-  content:url(assets/images/Ellipse_2.png);
+  content:url(img/Reg_images/Ellipse_2_1.png);
 }
 .Ellipse-2-outer{
   pointer-events:none;
@@ -3780,7 +3449,7 @@
   width:57.69230769230769%;
   height:57.69230769230769%;
   margin-top:21.153846153846153%;
-  content:url(assets/images/User_icon.png);
+  content:url(img/Reg_images/User_icon.png);
 }
 .User-icon-1-outer{
   pointer-events:none;
