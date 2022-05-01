@@ -3350,7 +3350,7 @@
 .user-regular-1{
   position:relative;
   z-index:97;
-  pointer-events:none;
+  pointer-events:auto;
   opacity:0.25;
   margin-left:15.208333333333334%;
   width:1.7361111111111112%;
@@ -3359,7 +3359,7 @@
   overflow:hidden;
 }
 .user-regular-1-outer{
-  pointer-events:none;
+  pointer-events:auto;
   z-index:97;
   position:absolute;
   display:flex;
@@ -3371,7 +3371,7 @@
 .User-Panel{
   position:relative;
   z-index:158;
-  pointer-events:none;
+  pointer-events:fill;
   margin-left:1216px;
   width:145px;
   min-width:145px;
@@ -3381,7 +3381,7 @@
   min-height:74px;
 }
 .User-Panel-outer{
-  pointer-events:none;
+  pointer-events:auto;
   z-index:158;
   position:relative;
   display:flex;
@@ -3389,7 +3389,7 @@
 .User-icon{
   position:relative;
   z-index:159;
-  pointer-events:none;
+  pointer-events:fill;
   margin-left:46px;
   width:52px;
   min-width:52px;
@@ -3399,7 +3399,7 @@
   min-height:52px;
 }
 .User-icon-outer{
-  pointer-events:none;
+  pointer-events:fill;
   z-index:159;
   position:relative;
   display:flex;
@@ -3444,7 +3444,8 @@
 .User-icon-1{
   position:relative;
   z-index:161;
-  pointer-events:none;
+  pointer-events:auto;
+    cursor: pointer;
   margin-left:21.153846153846153%;
   width:57.69230769230769%;
   height:57.69230769230769%;
@@ -3452,7 +3453,7 @@
   content:url(img/Reg_images/User_icon.png);
 }
 .User-icon-1-outer{
-  pointer-events:none;
+  pointer-events:auto;
   z-index:161;
   position:absolute;
   display:flex;

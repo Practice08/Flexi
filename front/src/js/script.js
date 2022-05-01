@@ -16,6 +16,15 @@ $(document).ready(function () {
 	});
 });
 let map;
+
+function icon_Main() {
+		window.location.href='Main_page.html'
+}
+
+function icon_Profile() {
+	window.location.href='Profile_page.html'
+}
+
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: { lat: -34.397, lng: 150.644 },

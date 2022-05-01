@@ -152,7 +152,7 @@
 .My-friend-s-account{
   position:relative;
   z-index:14;
-  pointer-events:none;
+  pointer-events:fill;
   margin-left:9.012875536480687%;
   width:29.613733905579398%;
   height:4.557640750670242%;

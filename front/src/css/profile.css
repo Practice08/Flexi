@@ -214,7 +214,7 @@
 .User-Panel{
   position:relative;
   z-index:31;
-  pointer-events:none;
+  pointer-events:auto;
   margin-left:1216px;
   width:145px;
   min-width:145px;
@@ -224,7 +224,7 @@
   min-height:74px;
 }
 .User-Panel-outer{
-  pointer-events:none;
+  pointer-events:auto;
   z-index:31;
   position:relative;
   display:flex;
@@ -232,7 +232,7 @@
 .User-icon{
   position:relative;
   z-index:32;
-  pointer-events:none;
+  pointer-events:fill;
   margin-left:46px;
   width:52px;
   min-width:52px;
@@ -242,7 +242,7 @@
   min-height:52px;
 }
 .User-icon-outer{
-  pointer-events:none;
+  pointer-events:fill;
   z-index:32;
   position:relative;
   display:flex;
@@ -287,11 +287,11 @@
 .User-icon-1{
   position:relative;
   z-index:34;
-  pointer-events:none;
+  pointer-events:auto;
   margin-left:21.153846153846153%;
   width:57.69230769230769%;
   height:57.69230769230769%;
-  margin-top:21.153846153846153%;
+  margin-top:21.153846153846153%;cursor: pointer;
   content:url(img/Reg_images/User_icon.png);
 }
 .User-icon-1-outer{
