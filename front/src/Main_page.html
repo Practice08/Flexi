@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,600,700">
     <link rel="stylesheet" href="css/main.css">
 
+    <style >
+        canvas{
+            border: none;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="js/js-calendar-main/app.css">
 </head>
@@ -186,102 +192,9 @@
                                     class="Donut"
                             >
 
-                                <div class="Value-2-3-outer">
-                                    <div
-                                            id="Value-2-3"
-                                            data-name="Value=2/3"
-                                            class="Value-2-3"
-                                    >
-                                        <div class="Content-outer">
-                                            <div
-                                                    id="Content"
-                                                    data-name="Content"
-                                                    class="Content"
-                                            >
-                                                <div class="Value-outer">
-                                                    <div
-                                                            id="Value"
-                                                            data-name="Value"
-                                                            class="Value"
-                                                    ><div key="0">64%</div>
-                                                    </div>
-                                                </div>
-                                                <div class="Label-outer">
-                                                    <div
-                                                            id="Label"
-                                                            data-name="Label"
-                                                            class="Label"
-                                                    ><div key="0">visited</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="Progress-outer">
-                                            <img
-                                                    id="Progress"
-                                                    data-name="Progress"
-                                                    alt="Progress"
-                                                    class="Progress"
-                                            />
-                                        </div>
-                                        <div class="Track-outer">
-                                            <img
-                                                    id="Track"
-                                                    data-name="Track"
-                                                    alt="Track"
-                                                    class="Track"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Value-1-3-outer">
-                                    <div
-                                            id="Value-1-3"
-                                            data-name="Value=1/3"
-                                            class="Value-1-3"
-                                    >
-                                        <div class="Content-1-outer">
-                                            <div
-                                                    id="Content-1"
-                                                    data-name="Content"
-                                                    class="Content-1"
-                                            >
-                                                <div class="Value-1-outer">
-                                                    <div
-                                                            id="Value-1"
-                                                            data-name="Value"
-                                                            class="Value-1"
-                                                    ><div key="0">36%</div>
-                                                    </div>
-                                                </div>
-                                                <div class="Label-1-outer">
-                                                    <div
-                                                            id="Label-1"
-                                                            data-name="Label"
-                                                            class="Label-1"
-                                                    ><div key="0">missed</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="Progress-1-outer">
-                                            <img
-                                                    id="Progress-1"
-                                                    data-name="Progress"
-                                                    alt="Progress"
-                                                    class="Progress-1"
-                                            />
-                                        </div>
-                                        <div class="Track-1-outer">
-                                            <img
-                                                    id="Track-1"
-                                                    data-name="Track"
-                                                    alt="Track"
-                                                    class="Track-1"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
+                                <canvas id="c"></canvas>
+
+
                             </div>
                         </div>
                         <div class="q32-5-40-outer">
@@ -307,6 +220,33 @@
                                     class="Calendar"
                             ><div key="0">Graphic</div>
                             </div>
+
+                            <canvas id="myChart" style="width:30%;max-width:400px; max-height: 600px; margin-top: 500px; margin-left: 560px; position: absolute"></canvas>
+
+                            <script>
+                                var xValues = [50,60,70,80,90];
+                                var yValues = [7,8,8,9,9,9];
+
+                                new Chart("myChart", {
+                                    type: "line",
+                                    data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                            fill: false,
+                                            lineTension: 0,
+                                            backgroundColor: "rgba(0,0,255,1.0)",
+                                            borderColor: "rgba(0,0,255,0.1)",
+                                            data: yValues
+                                        }]
+                                    },
+                                    options: {
+                                        legend: {display: false},
+                                        scales: {
+                                            yAxes: [{ticks: {min: 6, max:16}}],
+                                        }
+                                    }
+                                });
+                            </script>
                         </div>
                         <div class="Graphic-outer">
                             <div
@@ -314,6 +254,7 @@
                                     data-name="Graphic"
                                     class="Graphic"
                             ><div key="0">Calendar</div>
+
                             </div>
                         </div>
                         <div class="user-regular-1-outer">
@@ -387,6 +328,76 @@
     </div>
 </div>
 
+<script>
+    let data = [
+        {name:'Attendant', troops:29},
+        {name:'Absence', troops:71},
+    ];
+    let n = 0;
+    const randomHexColorCode = () => {
+        if(n%2===0){
+            n+=1;
+            return "#0000FF"
+        }
+        else {
+            return "#FF0000"
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+        let canvas = document.getElementById('c');
+        let ctx = canvas.getContext('2d');
+        canvas.width = 450;
+        canvas.height =300;
+        let total = data.reduce( (ttl, house) => {
+            return ttl + house.troops
+        }, 0);
+        let startAngle = 0;
+        let radius = 100;
+        let cx = canvas.width/2;
+        let cy = canvas.height/2;
+
+        data.forEach( house => {
+            //set the styles before beginPath
+            ctx.fillStyle = randomHexColorCode();
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = '#333';
+            ctx.beginPath();
+            //console.log(total, house.troops, house.troops/total);
+            // draw the pie wedges
+            let endAngle = ((house.troops / total) * Math.PI * 2) + startAngle;
+            ctx.moveTo(cx, cy);
+            ctx.arc(cx, cy, radius, startAngle, endAngle, false);
+            ctx.lineTo(cx, cy);
+            ctx.fill();
+            ctx.stroke();
+            ctx.closePath();
+
+            // add the labels
+            ctx.beginPath();
+            ctx.font = '20px Helvetica, Calibri';
+            ctx.textAlign = 'center';
+            ctx.fillStyle = 'rebeccapurple';
+            // midpoint between the two angles
+            // 1.5 * radius is the length of the Hypotenuse
+            let theta = (startAngle + endAngle) / 2;
+            let deltaY = Math.sin(theta) * 1.5 * radius;
+            let deltaX = Math.cos(theta) * 1.5 * radius;
+            /***
+             SOH  - sin(angle) = opposite / hypotenuse
+             = opposite / 1px
+             CAH  - cos(angle) = adjacent / hypotenuse
+             = adjacent / 1px
+             TOA
+
+             ***/
+            ctx.fillText(house.name, deltaX+cx, deltaY+cy);
+            ctx.closePath();
+
+            startAngle = endAngle;
+        })
+    });
+</script>
 <script src="js/js-calendar-main/app.js"></script>
 </body>
 </html>
